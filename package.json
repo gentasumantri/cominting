@@ -1,0 +1,45 @@
+{
+  "name": "cominting-dapp",
+  "description": "Co-Minting Dapp UI - build with Next.js",
+  "version": "1.0",
+  "author": "Genta Sumantri <genta.sumantri@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:fresh": "rm -rf ./.next && npm run dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --ignore-path .gitignore --fix",
+    "prettier": "bash -c 'prettier . --check --ignore-path <(cat .gitignore .prettierignore)'",
+    "prettier:fix": "bash -c 'prettier . --check --ignore-path <(cat .gitignore .prettierignore) --write'",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "bootstrap": "^5.2.3",
+    "connectkit": "1.2.1",
+    "connectkit-next-siwe": "^0.1.0",
+    "ethers": "^5.7.2",
+    "mongodb": "^5.0.1",
+    "next": "^12.1.0",
+    "next-seo": "^5.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.0",
+    "siwe": "^1.1.6",
+    "styled-components": "^5.3.1",
+    "swr": "^2.0.3",
+    "wagmi": "^0.11.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "inquirer": "^8.2.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-multiline-arrays": "^1.1.3"
+  }
+}
